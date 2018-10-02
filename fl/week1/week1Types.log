@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.2)  2 OCT 2018 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.2)  2 OCT 2018 11:45
 entering extended mode
-**./week1hw.tex
-(week1hw.tex
+**./week1Types.tex
+(week1Types.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -264,8 +264,8 @@ s
 \f@nch@O@erf=\skip126
 \f@nch@O@olf=\skip127
 \f@nch@O@orf=\skip128
-) (week1hw.aux)
-\openout1 = `week1hw.aux'.
+) (week1Types.aux)
+\openout1 = `week1Types.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -337,52 +337,28 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
+[1
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
- [1
-
-{C:/Users/benmk/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
- (week1hw.aux) ) 
+{C:/Users/benmk/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(week1Types.aux) ) 
 Here is how much of TeX's memory you used:
- 2648 strings out of 492970
- 33119 string characters out of 3135855
- 113416 words of memory out of 3000000
- 6506 multiletter control sequences out of 15000+200000
- 10591 words of font info for 42 fonts, out of 3000000 for 9000
+ 2620 strings out of 492970
+ 32734 string characters out of 3135855
+ 103394 words of memory out of 3000000
+ 6483 multiletter control sequences out of 15000+200000
+ 8892 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,11n,43p,343b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on week1hw.pdf (4 pages, 126963 bytes).
+ 27i,6n,43p,226b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on week1Types.pdf (1 page, 28812 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 18 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

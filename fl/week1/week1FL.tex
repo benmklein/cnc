@@ -1,14 +1,20 @@
 \documentclass[]{article}
 \usepackage{amssymb}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.5in,
+includehead, includefoot
+]{geometry}
 \usepackage{amsmath}
 \usepackage{qtree}
-
+\usepackage{fancyhdr}
 
 %opening
+\pagestyle{fancy}
+\fancyhf{}
+
 \title{Week 1: Formal Languages}
 \author{Ben Klein}
-
+\lhead{Ben Klein}
+\chead{Week 1: Formal Languages}
 \begin{document}
 
 \maketitle
@@ -103,13 +109,13 @@ The equivalence classes are:
 \medskip
 Now consider the monotone increasing function: $g(n) = f_n(n)+1$. This must be in the list of all monotone increasing functions by definition of the list, however the function cannot match anything in the list as they differ when $f_n(n)$. Since there is a contradiction, the monotone increasing functions cannot be countable.
 
-\item[\textbf{29.}]Basis: if $n,m=0$, then $n=m$\\
-Inductive Step: $s(n) = s(m)$\\
-Closure: $n=m$ only if this equality can be obtained from a finite application of the inductive step.\\
+\item[\textbf{29.}]Basis: if $n=0$, $m=0$ then $n=m$\\
+Recursive Case: if $m = n$, then $s(n) = s(m)$\\
+Closure: $n,m \epsilon \mathbb{N}$\\
 
-\item[\textbf{34.}] Basis: $s(0) - 1 = 0$\\
-Inductive step: $m = s(m) -1$\\
-Closure: m can only be obtained through finite application of the inductive step.\\
+\item[\textbf{34.}] Basis: if $n=0$, $m=1$ then $n$ is $pred(m)$\\
+Recursive Case: if $m = s(n)$, then $n =pred(m)$\\
+Closure: $n,m \epsilon \mathbb{N}$\\
 \newpage
 
 \item[\textbf{38.}]Basis: when n = 1
@@ -159,9 +165,12 @@ This proves the inductive hypothesis is true.
 	\begin{align*}
 	n_p((u\vee v)\vee w)) = n_o((u\vee v)\vee w)) + 1
 	\end{align*}
-	for all $w$.
+	for all $w$. In the recursive step, new terms are added to $E$ by adding one proposition letter and one letter. So,
+	\begin{align*}
+	n_p((u\vee v) + 1 = n_o((u\vee v) +1  + 1
+	\end{align*}
+	It follows that with each application of the recursive step, the number of terms will be 1 greater than the number of operators.
 	
-	\newpage
 	\item Base case: $i=0$\\
 	$n_L(u),n_R(u)$ means number of right and left parenthesis in an expression $u$\\
 	$n_L(E_0) = 0 = n_R(E_0)$
