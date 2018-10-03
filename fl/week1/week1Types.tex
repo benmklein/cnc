@@ -24,7 +24,57 @@ includehead, includefoot
 
 \begin{flushleft}
 \begin{enumerate}
+	\item
+	\begin{enumerate}
+		\item To prove these functions are extensionally equal, we must prove they produce the same output $f(n)$ for all $n$
+		\item Base case: $n=1$\\
+		\begin{align*}
+				\sum_{i=1}^{1} i = \frac{1(1+1)}{2}\ =1
+		\end{align*}
+		Inductive hypothesis: assume
+		\begin{align*}
+			\sum_{i=1}^{k} i = \frac{k(k+1)}{2}\
+		\end{align*}
+		Recursive step: Prove that\\
+		\begin{align*}
+			\sum_{i=1}^{n+1} i = \frac{(n+1)((n+1)+1)}{2}\
+		\end{align*}
+		Separating the summation term:
+		\begin{align*}
+			\sum_{i=1}^{n+1} i &= \sum_{i=1}^{n} i\ + (n+1) \\\\
+			\text{Using the inductive hypothesis:}\\
+			&= \frac{n(n+1)}{2}\ + (n+1)\\
+			&= \frac{n(n+1) + 2(n+1)}{2}\\
+			&= \frac{(n+1)((n+1)+1)}{2}\
+		\end{align*}
+	\end{enumerate}
+\item 
+\begin{enumerate}
+	\item To prove that strong induction is equivalent to the principle of induction you must prove they are extensionally equal.
+\end{enumerate}
+\item Pierce 2.2.6\\
+$R^\prime = R \cup\ \{(s,s)|s\epsilon S \}$
+The definition of reflexive closure $R^{\prime \prime}$ is the smallest reflexive relation $R$ on $s\epsilon S$.
+In other words $R^{\prime \prime} = R \cup\ \{(s,s)|s\epsilon S \}$ Since $R^{\prime \prime} = R^{\prime}$, $R^{\prime}$ is the smallest possible relation that fits the definition.
+\item Pierce 2.2.7\\
+Using induction to prove the rules given will produce a transitive closure on R:\\
+Base case: a set $R_0 = \{s,t,u,(s,t),(s,u)\}$\\
+after one recursive step, $R_1$:\\
+$(s,u) \epsilon R_1, R_0 \cup R_1 = $\\
+$R^{+} = \{s,t,u,(s,t),(t,u),(s,u)\}$\\
+This is the smallest transitive relation R.\\
+Inductive hypothesis:
+\begin{align*}
+	R^+ \text{is the smallest transitive relation of } \bigcup_{i}{R_i}
+\end{align*}
+Recursive case: prove that
+\begin{align*}
+	\bigcup_{i}{R_{i+1}} = \bigcup_{i}{R_i}
+\end{align*}
+Because $\bigcup_{i}{R_i}$ is the smallest transitive closure, adding any transitive relation to the set will redundant because $\bigcup_{i}{R_i}$ contains all pairs that can be obtained from 1 step of transitivity. It is therefore the transitive closure.
 
+\item Pierce 2.2.8\\
+$R^*$ is the smallest reflexive and transitive closure on a set S. A predicate, $P$ is defined by a one place relation on a set $S$ if $s \epsilon S$, and $s \epsilon P$. If P(S) is true after the binary relation R, then to check if P is preserved by R*, we must check if P(s=s) and P(s=u) is true. (By definition of reflexive and transitive.) Since these are equivalence relations on the parameter of P, they must be true. $(s=s)\epsilon P, (s=u)\epsilon P$
 \end{enumerate}
 \end{flushleft}
 
