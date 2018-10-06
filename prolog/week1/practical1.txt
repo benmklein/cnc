@@ -1,0 +1,113 @@
+?- hate(petunia, hagrid).
+Correct to: "hates(petunia,hagrid)"? yes
+true.
+
+?- hates(vernon, X).
+X = harry.
+
+?- hates(petunia, X).
+X = harry ;
+X = hagrid.
+
+?- sits_right_of(parvati, lavender).
+true.
+
+?- sits_right_of(parvati, neville).
+false.
+
+?- sits_right_of(X,hermoine).
+X = harry.
+
+?- sits_right_of(X,Y).
+X = natalie,
+Y = katie ;
+X = katie,
+Y = parvati ;
+X = parvati,
+Y = lavender ;
+X = lavender,
+Y = neville ;
+X = neville,
+Y = alicia ;
+X = alicia,
+Y = fred ;
+X = fred,
+Y = george ;
+X = george,
+Y = lee ;
+X = lee,
+Y = dennis ;
+X = dennis,
+Y = dean ;
+X = dean,
+Y = ginny ;
+X = ginny,
+Y = angelina ;
+X = angelina,
+Y = seamus ;
+X = seamus,
+Y = colin ;
+X = colin,
+Y = harry ;
+X = harry,
+Y = hermoine ;
+X = hermoine,
+Y = ron ;
+X = ron,
+Y = natalie
+
+?- sits_right_of(X,Y), sits_right_of(Y,hermoine).
+X = colin,
+Y = harry 
+
+?- are_neighbors_of(neville,fred,X).
+X = alicia.
+
+?- aunt_of(X,harry).
+X = petunia .
+
+?- grandfather_of(X,harry);grandmother_of(Y,harry).
+X = albert ;
+X = paul ;
+Y = ruth ;
+Y = helen.
+
+?- grandfather_of(paul,X);grandmother_of(helen,X).
+X = dudley ;
+X = harry ;
+X = dudley ;
+X = harry ;
+false.
+
+?- sister_of(X,james)
+|    .
+false.
+
+For the lunch section, the queries gave very long lists I wont include it all here
+Here is the knowledge base for that section:
+
+menu(hungry,X,Y,Z):- starter(X), main(Y), dessert(Z).
+menu(not_so_hungry,X,Y,Z):- starter(X), main(Y).
+menu(not_so_hungry,X,Y,Z):- main(Y), dessert(Z).
+menu(on_diet,X,Y,Z):- starter(X).
+
+?- ancestor_of(albert,harry).
+true 
+
+?- ancestor_of(X,harry).
+X = james ;
+X = lili ;
+X = albert ;
+X = ruth ;
+X = paul ;
+X = helen ;
+X = g_grandpa ;
+X = g_grandma ;
+
+?- ancestor_of(dudley,harry).
+ERROR: Out of local stack
+
+likes(harry, X):- magical_creature(X), not(dementor(X)).
+
+complex(X):- not(atom(X)),not(number(X)),nonvar(X).
+
